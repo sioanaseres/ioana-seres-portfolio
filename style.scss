@@ -122,7 +122,7 @@ input, button, textarea, select { font: inherit; }
             .ProjectLinks a{display: inline-block; text-decoration: none; color: #000;  font-weight: bold; font-size: 1.2rem;  margin: 1rem; border-bottom: 2px solid #000;
                 &:hover{ transform: translateY(-10px);   transition: all .2s ease-in-out; }}
 
-.Contact{padding: 1rem; height: 100vh;
+.Contact{padding: 1rem; height: 100vh; margin-bottom: 3rem;
    
 }
     .ContactContainer{display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between;
