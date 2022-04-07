@@ -2,7 +2,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.5em; }
+html { font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.5em;   scroll-behavior: smooth; }
 
 body { display: block; min-height: 100vh; margin: 0; padding: 0; text-rendering: optimizeSpeed; position: relative; }
 
@@ -14,12 +14,12 @@ input, button, textarea, select { font: inherit; }
     .Header{}
         .Logo{}
             .LogoImage{}
-        .NavigationBar{display: flex; align-items: center; justify-content:space-between; height: 5rem; margin: 1rem 0;
+        .NavigationBar{display: flex; align-items: center; justify-content:space-between; height: 5rem; margin: 0;
             @media (min-width:1050px) {display: none}}
             .NavigationMobile{}
                 .NavigationToggle{border: none; background: transparent; padding: 1.5rem; }
                     .NavigationToggle img{height: 1.5rem; }
-            .NavigationContainer{display: none; background: url("./images/backgroundNav.webp") center/cover no-repeat; height: 80vh; flex-direction: column; align-items: center; justify-content: center; }
+            .NavigationContainer{display: none; background: linear-gradient(288deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 46%); height: 100vh; flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 3rem; }
           
                 .NavigationMobileItems{display: flex; flex-direction: column; align-items: center; justify-content: center; list-style-type: none;  padding-left: 0;}
                     .NavigationMobileItem{ padding: 1rem ; font-size: 1.2rem; }
@@ -59,7 +59,7 @@ input, button, textarea, select { font: inherit; }
         @media (min-width:900px) { width: 50%; display: flex; flex-direction: column; align-items:flex-start; justify-content: center; margin-left: 5rem;}
     }
     .AboutTitle {text-transform: uppercase; font-size: 2rem; line-height: 3rem; margin-bottom: 0; position: relative; margin-top: 4rem;}
-    .Background{    position: absolute; left: -6px;top: 0;color: transparent; font-size: 50px; font-weight: 900; opacity: .1;line-height: 0;-webkit-text-stroke: 1px #000;-webkit-user-select: none;
+    .Background{  position: absolute; left: -6px;top: 0;color: transparent; font-size: 3.3rem; font-weight: 900; opacity: .1;line-height: 0;-webkit-text-stroke: 1px #000;-webkit-user-select: none;
         @media (min-width:700px) { font-size: 150px;}}
     .AboutSubTitle{    }
     .AboutContainer hr{ display: block; width: 100%; background:rgba(250, 250, 250, 0.4);}
@@ -84,7 +84,7 @@ input, button, textarea, select { font: inherit; }
 
 .Modal{display: none; flex-direction: column; align-items: center; justify-content: flex-start; height: 500vh; background: rgba(0, 0, 0, 0.8); position: absolute; top: 0; left: 0; width: 100%;
 }
-    .ModalContainer{display: flex; flex-direction: column; align-items: flex-start; justify-content: center; background: white; height: 70vh; width: 90%; overflow: scroll; margin-top: 2rem; position: fixed; padding-top: 2rem;
+    .ModalContainer{display: flex; flex-direction: column; align-items: flex-start; justify-content: center; background: white; height: 100vh; width: 90%; overflow: scroll; margin-top: 2rem; position: fixed; padding-top: 2rem;
         @media (min-width:768px) {  height: 70vh; align-items: center; padding-top: 2rem; flex-direction: row; flex-wrap: wrap;}
         @media (min-width:1000px){flex-wrap: nowrap; flex-direction: column}
     } 
@@ -114,12 +114,12 @@ input, button, textarea, select { font: inherit; }
 .Portfolio{padding: 1rem;}
     .PortfolioProjects{display: flex;flex-direction: column; align-items: flex-start; justify-content: center; margin-top: 3rem;
     @media (min-width:700px){flex-direction: row; flex-wrap: wrap;}}
-        .PortfolioProject{display: flex;flex-direction: column; align-items: flex-start; justify-content: center;width: 100%; padding: 1rem;
-    @media (min-width:700px){width: 50%;} 
+        .PortfolioProject{display: flex;flex-direction: column; align-items: flex-start; justify-content: center;width: 100%; padding: 1rem; border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    @media (min-width:700px){width: 50%; border-bottom: none} 
     @media (min-width:1300px){width: 33%;}}
             .PortfolioProject img{width: 95%; height: auto;
                 @media (min-width:700px){
-                    &:hover{transform: scale(1.1); transition: transform 0.2s ease-in-out;}
+                    &:hover{transform: scale(1.1); transition: transform 0.5s ease;}
                 }
               }
             .PortfolioDescription{display:block; color: #777; width: 90%; 
@@ -144,5 +144,7 @@ input, button, textarea, select { font: inherit; }
 
     
 
-.Footer{background: #000 ; height: 10rem; color:#ffffff; text-align: center; font-weight: bold; font-size: 1.5rem; display: flex; align-items: center; justify-content: center;}
+.Footer{background: #000 ; height: 5rem; color:#ffffff; text-align: center; font-weight: bold; font-size: 1.5rem; display: flex; align-items: center; justify-content: center;}
  .Active{display: flex; }
+
+ .AddMargin{margin-bottom: 1rem;}
