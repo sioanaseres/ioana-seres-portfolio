@@ -30,7 +30,7 @@ input, button, textarea, select { font: inherit; }
         .HeroSection   {position: relative; display: block; color: white; 
             @media (min-width:700px) {display: flex; align-items: center; justify-content: flex-end;}
         }
-            .Backdrop{content: "" ; position: absolute;  left: 0; right: 0; background: rgba(0, 0, 0, 0.4); height: 850px;  max-width: 700px;
+            .Backdrop{content: "" ; position: absolute;  left: 0; right: 0; background: rgba(0, 0, 0, 0.4); height: 53rem;  max-width: 700px;
             @media (min-width:700px) {display: none;}}
             .HeroSection {  width: 100%;  }
             .PageTitle{position: absolute; top:50%; left:3%; color:transparent;
@@ -52,7 +52,7 @@ input, button, textarea, select { font: inherit; }
 
 .About{}
 .AboutContainer{display: flex; align-items: flex-start; justify-content: center; flex-direction: column; margin: 3rem 1rem;
-    @media (min-width:900px) {display: flex; flex-direction: row; height: 80vh;  align-items: center } }
+    @media (min-width:900px) {display: flex; flex-direction: row; height: 50rem;  align-items: center } }
     .AboutContainer img{ display: none;
         @media (min-width:900px) {width: 30vw; height: 30vh; display: inline-block }}
     .AboutInfo{
