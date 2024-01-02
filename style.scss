@@ -255,7 +255,7 @@ select {
   -webkit-text-stroke: 1px #000;
   -webkit-user-select: none;
   @media (min-width: 700px) {
-    font-size: 150px;
+    font-size: 100px;
   }
 }
 .AboutSubTitle {
@@ -538,7 +538,7 @@ select {
 
 .Contact {
   padding: 1rem;
-  height: 50vh;
+  // height: 50vh;
   margin-bottom: 3rem;
 }
 .ContactContainer {
@@ -564,7 +564,7 @@ select {
   align-items: flex-start;
   justify-content: space-around;
   flex-direction: column;
-  height: 15rem;
+  height: 7rem;
 }
 .ContactMethods a {
   text-decoration: none;

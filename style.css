@@ -278,7 +278,7 @@ select {
 }
 @media (min-width: 700px) {
   .Background {
-    font-size: 150px;
+    font-size: 100px;
   }
 }
 
@@ -607,7 +607,6 @@ select {
 
 .Contact {
   padding: 1rem;
-  height: 50vh;
   margin-bottom: 3rem;
 }
 
@@ -640,7 +639,7 @@ select {
   align-items: flex-start;
   justify-content: space-around;
   flex-direction: column;
-  height: 15rem;
+  height: 7rem;
 }
 
 .ContactMethods a {
